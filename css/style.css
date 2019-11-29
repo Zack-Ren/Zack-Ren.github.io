@@ -1265,3 +1265,7 @@ body:after {
   max-width: 40vw;
   margin: auto;
 }
+
+.social-icons{
+  text-align: center;
+}
