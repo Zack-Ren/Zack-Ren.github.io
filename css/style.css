@@ -893,6 +893,8 @@ body:after {
   bottom: 0;
   z-index: 1;
   max-width: 950px;
+  max-height: 650px;
+  padding-right: 225px;
 }
 
 @media (max-width: 991.98px) {
@@ -1261,11 +1263,13 @@ body:after {
   font-family: Raleway;
 }
 
-.formStyle {
-  max-width: 40vw;
-  margin: auto;
+.contact-container{
+  max-width: 251px;
+  margin:auto;
 }
 
-.social-icons{
-  text-align: center;
+.contact-icon{
+  max-width: 80px;
+  padding-left:15px;
+  padding-right:15px;
 }
