@@ -1263,13 +1263,17 @@ body:after {
   font-family: Raleway;
 }
 
-.contact-container{
+.contact-container {
   max-width: 251px;
-  margin:auto;
+  margin: auto;
 }
 
-.contact-icon{
-  max-width: 60px;
-  padding-left:15px;
-  padding-right:15px;
+.contact-icon {
+  max-width: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.typed-cursor {
+  font-size: 34px;
 }

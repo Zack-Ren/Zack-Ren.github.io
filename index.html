@@ -40,13 +40,13 @@
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
       <div class="container-fluid">
         <div class="row align-items-center justify-content-center">
-          
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#about-section" class="nav-link">About</a></li>
-              </ul>
-            </nav>
+
+          <nav class="site-navigation position-relative text-right" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+              <li><a href="#home-section" class="nav-link">Home</a></li>
+              <li><a href="#about-section" class="nav-link">About</a></li>
+            </ul>
+          </nav>
 
           <div class="text-left">
             <nav class="site-navigation position-relative" role="navigation">
@@ -70,9 +70,12 @@
           <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
             <div class="row">
               <div class="col-lg-6">
-                <h1 class="text-black" style="font-size: 34px">
-                  I'm Zackary Ren
-                </h1>
+                <div id="typed-strings">
+                  <h1 class="text-black" style="font-size: 34px">
+                    I'm Zackary Ren
+                  </h1>
+                </div>
+                <span id="typed" style="font-size: 34px"></span>
                 <p class="lead">
                   Software and Biomedical Engineer at McMaster
                 </p>
@@ -136,12 +139,13 @@
         <div id="posts" class="row no-gutter">
 
           <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/veritech.jpg" class="item-wrap fancybox" data-caption="News sites strive to report current events as unbiased as possible
+            <a href="images/veritech.jpg" class="item-wrap fancybox"
+              data-caption="News sites strive to report current events as unbiased as possible
             but there will inevitably be some bias. Veritech aims to detect bias in articles and displays the results in a spectrum from left-wing 
-            to right wing. This is still a work in progress and we plan to use Python's Beautiful Soup to parse web articles, Microsoft Azure's NLP for bias detection and Django to tie it all together.">
+            to right wing. We plan to use Python's Beautiful Soup to parse web articles, Microsoft Azure's NLP for bias detection and Django to tie it all together.">
               <span class="imTitle">Veritech
                 <p class="techLabel">
-                  <br/>
+                  <br />
                   Python, Django, Azure, React
                 </p></span>
               <img class="img-fluid" src="images/veritech.jpg" />
@@ -149,12 +153,13 @@
           </div>
 
           <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/pillpal.jpg" class="item-wrap fancybox" data-caption="When I worked as a pharamcist assisant I noticed an issue with patient compliance.
+            <a href="images/pillpal.jpg" class="item-wrap fancybox"
+              data-caption="When I worked as a pharamcist assisant I noticed an issue with patient compliance.
             Medication management can be confusing and time consuming and patients might miss a dose. PillPal aims to make this task as convenient as possible.
             OpenCV detects and isolates the medication label which is then converted to text with PyTesseract. The back-end is paired with a front-end built with Flutter.">
               <span class="imTitle">PillPal
                 <p class="techLabel">
-                  <br/>
+                  <br />
                   Python
                 </p></span>
               <img class="img-fluid" src="images/pillpal.jpg" />
@@ -162,11 +167,12 @@
           </div>
 
           <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/convolution.jpg" class="item-wrap fancybox" data-caption="This program processes an image by applying a convolution kernel. It takes an input 
+            <a href="images/convolution.jpg" class="item-wrap fancybox"
+              data-caption="This program processes an image by applying a convolution kernel. It takes an input 
             image of type .ppm and reads the RGB values of each pixel. The kernel is applied to each pixel and the modified RGB values are saved as an output .ppm file.">
               <span class="imTitle">Image Processing
                 <p class="techLabel">
-                  <br/>
+                  <br />
                   C
                 </p></span>
               <img class="img-fluid" src="images/convolution.jpg" />
@@ -174,12 +180,13 @@
           </div>
 
           <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/marypopopens.jpg" class="item-wrap fancybox" data-caption="My team was tasked with developing a solution to a major issue our quadriplegic client had.
+            <a href="images/marypopopens.jpg" class="item-wrap fancybox"
+              data-caption="My team was tasked with developing a solution to a major issue our quadriplegic client had.
             He struggled with independence as they needed assistance with simple tasks, like holding an umbrella. We developed 'Mary Pop-Opens' as a solution providing independence
             to our client on rainy days. With the press of a button, a Raspberry Pi controls a pair of servos to adjust and open an umbrella above the user.">
               <span class="imTitle">Mary Pop-Opens
                 <p class="techLabel">
-                  <br/>
+                  <br />
                   Python, Raspberry Pi
                 </p></span>
               <img class="img-fluid" src="images/marypopopens.jpg" />
@@ -192,17 +199,25 @@
     <section class="site-section" id="contact-section" style="padding-top:50px; padding-bottom:50px">
       <div class="container">
         <div class="contact-container">
-            <a href="mailto:renzackary@gmail.com"><img src="images/email.png" alt="email-icon" class="contact-icon"></a>
-            <a href="https://www.linkedin.com/in/zack-ren/"><img src="images/linkedin.png" alt="linkedin-icon" class="contact-icon">
-            <a href="https://github.com/Zack-Ren"><img src="images/github.png" alt="github-icon" class="contact-icon"></a>
+          <a href="mailto:renzackary@gmail.com"><img src="images/email.png" alt="email-icon" class="contact-icon"></a>
+          <a href="https://www.linkedin.com/in/zack-ren/"><img src="images/linkedin.png" alt="linkedin-icon"
+              class="contact-icon">
+            <a href="https://github.com/Zack-Ren"><img src="images/github.png" alt="github-icon"
+                class="contact-icon"></a>
         </div>
       </div>
     </section>
-
-    
   </div>
   <!-- .site-wrap -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 75,
+      startDelay: 100,
 
+    });
+  </script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
