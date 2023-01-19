@@ -2638,7 +2638,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 8em;
 		}
 
 /* Footer */
@@ -3014,7 +3014,7 @@ input, select, textarea {
 		transition: max-height 0.2s ease-out;
 		font-size:medium;
 		line-height: 1.3em;
-		color:rgb(31, 31, 31);
+		color:rgb(70, 70, 70);
 		border-bottom-left-radius: 0.35em;
 		border-bottom-right-radius: 0.35em;
 	}	
